@@ -1,0 +1,13 @@
+[Unit]
+Description=Belaf Center prototipo
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/belaf-center
+ExecStart=/usr/bin/node server.js
+Restart=always
+User=www-data
+EnvironmentFile=/opt/belaf-center/.env
+
+[Install]
+WantedBy=multi-user.target

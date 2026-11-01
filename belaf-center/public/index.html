@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Belaf Center · Prototipo v1.1</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<div id="aviso" role="note">Prototipo académico, no es el sitio oficial de Belaf Center<button id="salir" type="button" hidden>Salir</button></div>
+<div id="tabs-equipo" hidden></div>
+
+<div id="vista-cliente">
+  <header class="top"><div class="top-in" id="top-in"></div></header>
+  <main id="pantalla"></main>
+  <div id="dock"></div>
+  <nav id="cli-tabs" aria-label="Navegación"></nav>
+  <section id="chat" hidden aria-label="Chat con Bela">
+    <div class="chat-head" id="chat-head"></div>
+    <div id="chat-log" aria-live="polite"></div>
+    <div id="chat-faq"></div>
+    <form id="chat-form" autocomplete="off">
+      <label for="chat-in" class="sr">Escribe tu mensaje</label>
+      <input id="chat-in" placeholder="Escribe tu consulta…" maxlength="300">
+      <button type="submit" aria-label="Enviar"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5 21 12 3 3.5 3 10l12 2-12 2z"/></svg></button>
+    </form>
+    <button type="button" class="chat-x2" data-act="cerrar-chat">Cerrar chat</button>
+  </section>
+</div>
+<div id="vista-asesor" hidden></div>
+<div id="vista-negocio" hidden></div>
+<aside id="inv" hidden aria-label="Panel del investigador"></aside>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="aviso-permiso" role="alert" hidden></div>
+<div id="login" hidden>
+  <form class="login-card" id="login-form" autocomplete="on" novalidate>
+    <div class="login-marca" id="login-marca"></div>
+    <h1>Iniciar sesión</h1>
+    <p>Ingresa con tu correo para participar en la prueba.</p>
+    <div class="campo"><label for="login-email">Correo</label><input id="login-email" type="email" autocomplete="email" required></div>
+    <div class="campo"><label for="login-pass">Contraseña</label><input id="login-pass" type="password" autocomplete="current-password"></div>
+    <p class="login-err" id="login-err" hidden></p>
+    <button class="btn btn-rojo btn-bloque" type="submit">Ingresar</button>
+  </form>
+</div>
+
+<script src="/assets/images.js"></script>
+<script src="/assets/api.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>

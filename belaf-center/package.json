@@ -1,0 +1,10 @@
+{
+  "name": "belaf-center-prototipo",
+  "version": "1.1.0",
+  "description": "Prototipo académico Belaf Center / Bela — frontend + backend",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED",
+  "private": true
+}
