@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+data/*
+!data/.gitkeep
+node_modules
+npm-debug.log
+.git
+Dockerfile
+.dockerignore
+belaf.service
+README.md
